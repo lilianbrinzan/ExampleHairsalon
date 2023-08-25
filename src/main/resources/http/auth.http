@@ -1,0 +1,19 @@
+### Registration Marsel
+
+POST http://localhost:8080/api/register
+Content-Type: application/json
+
+{
+  "email": "sidikov.marsel@gmail.com",
+  "password": "Qwerty007!"
+}
+
+### Registration Alisher
+
+POST http://localhost:8080/api/register
+Content-Type: application/json
+
+{
+  "email": "alisher@gmail.com",
+  "password": "Qwerty008!"
+}
