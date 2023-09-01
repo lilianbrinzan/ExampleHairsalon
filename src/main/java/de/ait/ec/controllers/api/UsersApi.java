@@ -45,7 +45,12 @@ public interface UsersApi {
     @DeleteMapping("/{user-id}")
     ResponseEntity<UserDto> deleteUser(@PathVariable("user-id") Long userId);
 
-    @PreAuthorize("hasAnyAuthority('MANAGER', 'ADMIN')")
-    @GetMapping("/clients")
-    ResponseEntity<UsersDto> getAllClientsNotInHairsalon(@RequestParam(required = false, name = "notInHairsalon") Long hairsalonId);
+    /**
+     * @PreAuthorize("hasAnyAuthority('MANAGER', 'ADMIN')")
+     *     @GetMapping("/clients")
+     *     ResponseEntity<UsersDto> getAllClientsNotInHairsalon(@RequestParam(required = false, name = "notInHairsalon") Long hairsalonId);
+     *
+     *
+     */
+
 }

@@ -35,10 +35,13 @@ public class UsersController implements UsersApi {
         return ResponseEntity.ok(usersService.deleteUser(userId));
     }
 
-     @Override
-     public ResponseEntity<UsersDto> getAllClientsNotInHairsalon(Long hairsalonId){
-             return ResponseEntity
-                     .ok(usersService.getAllClientsNotInHairsalon(hairsalonId));
-     }
+
+    /**
+     *  @Override
+     *      public ResponseEntity<UsersDto> getAllClientsNotInHairsalon(Long hairsalonId){
+     *              return ResponseEntity
+     *                      .ok(usersService.getAllClientsNotInHairsalon(hairsalonId));
+     *      }
+     */
 
 }

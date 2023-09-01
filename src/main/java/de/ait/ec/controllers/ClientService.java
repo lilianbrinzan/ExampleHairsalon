@@ -8,11 +8,14 @@ import java.util.List;
 
 @Service
 public class ClientService {
-    private ClientRepository repository;
-    public ClientService(ClientRepository repository){
-        this.repository = repository;
-    }
-    public List<Client> findAll() {
-        return repository.findAll();
-    }
+    /**
+     *  private ClientRepository repository;
+     *     public ClientService(ClientRepository repository){
+     *         this.repository = repository;
+     *     }
+     *     public List<Client> findAll() {
+     *         return repository.findAll();
+     *     }
+     */
+
 }
